@@ -7,14 +7,14 @@ module.exports = {
     changeCompletedProperty
 }
 
-function changeCompletedProperty(tk-pj) {
-    if (tk-pj.completed !== 1) {
-        tk-pj.completed = false;
+function changeCompletedProperty(tk_pj) {
+    if (tk_pj.completed !== 1) {
+        tk_pj.completed = false;
     }
     else {
-        tk-pj.completed = true;
+        tk_pj.completed = true;
     }
-    return tk-pj;
+    return tk_pj;
 }
 
 function find() {
