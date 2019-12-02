@@ -1,7 +1,7 @@
 const express = require('express');
 
-const ProjectRouter = require('./routes/pj-router');
-const ResourceRouter = require('./routes/rsc-router')
+const ProjectRouter = require('./routes/pj-router.js');
+const ResourceRouter = require('./routes/resource-router.js')
 
 const server = express();
 
