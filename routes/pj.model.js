@@ -24,4 +24,8 @@ function find() {
 function findById(id) {
     return db('projects').where({id}).first();
 }
-function add()
+function add(project) {
+    return db('projects', id)
+            .insert(project)
+            .then(id => findById(...id));
+};
