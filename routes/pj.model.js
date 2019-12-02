@@ -1,11 +1,6 @@
 const db = require('../data/dbConfig');
 
-module.exports = {
-    find,
-    findById,
-    add,
-    changeCompletedProperty
-}
+
 
 function changeCompletedProperty(tk_pj) {
     if (tk_pj.completed !== 1) {
@@ -29,3 +24,10 @@ function add(project) {
             .insert(project)
             .then(id => findById(...id));
 };
+
+module.exports = {
+    find,
+    findById,
+    add,
+    changeCompletedProperty
+}
