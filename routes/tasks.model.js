@@ -1,6 +1,11 @@
 const db = require("../data/dbConfig.js");
 
-
+module.exports = {
+    find,
+    findById,
+    add,
+    findAllByProjectId
+}
 
 function find() {
     return db("tasks");
@@ -21,9 +26,3 @@ function add(task, project_id) {
         .then(id => findById(...id));
 };
 
-module.exports = {
-    find,
-    findById,
-    add,
-    findAllByProjectId
-}

@@ -1,6 +1,10 @@
 const db = require("../data/dbConfig.js");
 
-
+module.exports = {
+    find,
+    findById,
+    add
+}
 
 function find() {
     return db("resources");
@@ -16,8 +20,4 @@ function add(resource) {
         .then(id => findById(...id));
 };
 
-module.exports = {
-    find,
-    findById,
-    add
-}
+
